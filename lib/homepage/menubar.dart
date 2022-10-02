@@ -5,6 +5,10 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:welcome/home.dart';
 import 'package:welcome/homepage/drawer.dart';
+import 'package:welcome/homepage/page_1home.dart';
+import 'package:welcome/homepage/page_2list.dart';
+import 'package:welcome/homepage/page_3history.dart';
+import 'package:welcome/homepage/page_4user.dart';
 
 class Menubar extends StatefulWidget {
   const Menubar({super.key});
@@ -15,6 +19,12 @@ class Menubar extends StatefulWidget {
 
 class _MenubarState extends State<Menubar> {
   int currentIndex = 0;
+  final screens = [
+    HomePage(),
+    ListPage(),
+    HitstoryPage(),
+    UserPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -61,94 +71,9 @@ class _MenubarState extends State<Menubar> {
             )
           ]),
       backgroundColor: Color.fromARGB(255, 210, 210, 252),
-      body: SafeArea(
-          child: Center(
-        child: SingleChildScrollView(
-            child: Column(
-          children: [
-            Material(
-              borderRadius: BorderRadius.circular(25),
-              color: Color(0xff2F3A61),
-              child: MaterialButton(
-                padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyHome()));
-                },
-                child: Text(
-                  "+เพิ่มยา ",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-            SizedBox(height: 40),
-            Material(
-              borderRadius: BorderRadius.circular(25),
-              color: Color(0xff2F3A61),
-              child: MaterialButton(
-                padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyHome()));
-                },
-                child: Text(
-                  "รายการยา",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-            SizedBox(height: 40),
-            Material(
-              borderRadius: BorderRadius.circular(25),
-              color: Color(0xff2F3A61),
-              child: MaterialButton(
-                padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyHome()));
-                },
-                child: Text(
-                  "ประวัติยา",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-            SizedBox(height: 40),
-            Material(
-              borderRadius: BorderRadius.circular(25),
-              color: Color(0xff2F3A61),
-              child: MaterialButton(
-                padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyHome()));
-                },
-                child: Text(
-                  "ข้อมูลส่วนตัว",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-            SizedBox(height: 40),
-          ],
-        )),
-      )),
+      body: Center(
+        child: screens[currentIndex],
+      ),
     );
   }
 }
