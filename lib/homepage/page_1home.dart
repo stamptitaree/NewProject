@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:welcome/Menupage/add_drug.dart';
 import 'package:welcome/home.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyHome()));
+                      MaterialPageRoute(builder: (context) => Add_drug()));
                 },
                 child: Text(
                   "+เพิ่มยา ",
