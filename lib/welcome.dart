@@ -27,7 +27,7 @@ class _WelcomeState extends State<Welcome> {
                   // height: 120,
                   fit: BoxFit.cover,
                 ),
-                SizedBox(height: 40),
+                SizedBox(height: 45),
 
                 //Hello again!
                 Text('ยินดีต้อนรับ',
