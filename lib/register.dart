@@ -84,7 +84,8 @@ class _RegisterState extends State<Register> {
                             borderRadius: BorderRadius.circular(20)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                                color: Color.fromARGB(255, 84, 48, 28)),
+                                width: 5,
+                                color: Color.fromARGB(255, 250, 250, 250)),
                             borderRadius: BorderRadius.circular(20)),
                         hintText: 'Password',
                         hintStyle: TextStyle(
@@ -107,7 +108,8 @@ class _RegisterState extends State<Register> {
                             borderRadius: BorderRadius.circular(20)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                                color: Color.fromARGB(255, 164, 105, 22)),
+                                width: 5,
+                                color: Color.fromARGB(255, 250, 250, 250)),
                             borderRadius: BorderRadius.circular(20)),
                         hintText: 'ชื่อ-นามสกุล',
                         hintStyle: TextStyle(
@@ -130,7 +132,8 @@ class _RegisterState extends State<Register> {
                             borderRadius: BorderRadius.circular(20)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                                color: Color.fromARGB(255, 84, 48, 28)),
+                                width: 5,
+                                color: Color.fromARGB(255, 250, 250, 250)),
                             borderRadius: BorderRadius.circular(20)),
                         hintText: 'ประวัติแพ้ยา',
                         hintStyle: TextStyle(
@@ -153,7 +156,8 @@ class _RegisterState extends State<Register> {
                             borderRadius: BorderRadius.circular(20)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                                color: Color.fromARGB(255, 84, 48, 28)),
+                                width: 5,
+                                color: Color.fromARGB(255, 250, 250, 250)),
                             borderRadius: BorderRadius.circular(20)),
                         hintText: 'โรคประจำตัว',
                         hintStyle: TextStyle(
