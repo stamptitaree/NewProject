@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:welcome/homepage/menubar.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -171,21 +172,22 @@ class _RegisterState extends State<Register> {
 
                 SizedBox(height: 25),
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(8, 15, 8, 15),
-                    decoration: BoxDecoration(
-                        color: Color(0xff2F3A61),
-                        borderRadius: BorderRadius.circular(12)),
-                    child: Center(
-                      child: Text(
-                        'เข้าสู่ระบบ',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 26),
-                      ),
+                Material(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color(0xff2F3A61),
+                  child: MaterialButton(
+                    padding: EdgeInsets.fromLTRB(100, 15, 100, 15),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Menubar()));
+                    },
+                    child: Text(
+                      "สมัครสมาชิก",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 24,
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
