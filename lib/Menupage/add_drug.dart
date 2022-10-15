@@ -13,6 +13,7 @@ class _Add_drugState extends State<Add_drug> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffE7ECFF),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 62, 47, 50),
         centerTitle: true,
@@ -26,6 +27,7 @@ class _Add_drugState extends State<Add_drug> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: TextField(
+              style: TextStyle(color: Colors.black, fontSize: 18),
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -33,8 +35,8 @@ class _Add_drugState extends State<Add_drug> {
                       ),
                       borderRadius: BorderRadius.circular(20)),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          width: 5, color: Color.fromARGB(255, 255, 252, 250)),
+                      borderSide:
+                          BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
                       borderRadius: BorderRadius.circular(20)),
                   hintStyle: TextStyle(
                       fontSize: 20,
@@ -48,6 +50,7 @@ class _Add_drugState extends State<Add_drug> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: TextField(
+              style: TextStyle(color: Colors.black, fontSize: 18),
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -55,8 +58,8 @@ class _Add_drugState extends State<Add_drug> {
                       ),
                       borderRadius: BorderRadius.circular(20)),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          width: 5, color: Color.fromARGB(255, 255, 252, 250)),
+                      borderSide:
+                          BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
                       borderRadius: BorderRadius.circular(20)),
                   hintStyle: TextStyle(
                       fontSize: 20,
@@ -71,10 +74,10 @@ class _Add_drugState extends State<Add_drug> {
             borderRadius: BorderRadius.circular(25),
             color: Color(0xff2F3A61),
             child: MaterialButton(
-              padding: EdgeInsets.fromLTRB(80, 20, 80, 20),
+              padding: EdgeInsets.fromLTRB(120, 15, 120, 15),
               onPressed: () {},
               child: Text(
-                "++++เพิ่มยา ",
+                "ยืนยัน",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 30,

@@ -14,6 +14,7 @@ class _ListPageState extends State<ListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffE7ECFF),
       body: SafeArea(
           child: Center(
         child: SingleChildScrollView(

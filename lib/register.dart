@@ -51,6 +51,10 @@ class _RegisterState extends State<Register> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: TextField(
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
@@ -77,6 +81,10 @@ class _RegisterState extends State<Register> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: TextField(
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
@@ -101,6 +109,10 @@ class _RegisterState extends State<Register> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: TextField(
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
@@ -125,6 +137,10 @@ class _RegisterState extends State<Register> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: TextField(
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
@@ -149,6 +165,10 @@ class _RegisterState extends State<Register> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: TextField(
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
