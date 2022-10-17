@@ -32,7 +32,7 @@ class _WelcomeState extends State<Welcome> {
                 //Hello again!
                 Text('ยินดีต้อนรับ',
                     style: TextStyle(
-                        fontSize: 42,
+                        fontSize: 40,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(224, 80, 38, 38))),
                 SizedBox(height: 50),
@@ -40,7 +40,7 @@ class _WelcomeState extends State<Welcome> {
                 Text('แอปพลิเคชันบริหารยา \nสำหรับผู้ป่วยโรคเรื้อรัง',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(236, 186, 42, 14))),
                 SizedBox(height: 100),
