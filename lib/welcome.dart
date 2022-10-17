@@ -12,7 +12,7 @@ class _WelcomeState extends State<Welcome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 241, 216),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -27,15 +27,27 @@ class _WelcomeState extends State<Welcome> {
                   // height: 120,
                   fit: BoxFit.cover,
                 ),
-                SizedBox(height: 40),
+                SizedBox(height: 80),
 
                 //Hello again!
-                Text('ยินดีต้อนรับ',
-                    style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(224, 80, 38, 38))),
-                SizedBox(height: 50),
+
+                Material(
+                  borderRadius: BorderRadius.circular(25),
+                  color: Color(0xff804F4F),
+                  child: MaterialButton(
+                    padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => MyHome()));
+                    },
+                    child: Text('ยินดีต้อนรับ',
+                        style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white)),
+                  ),
+                ),
+                SizedBox(height: 30),
 
                 Text('แอปพลิเคชันบริหารยา \nสำหรับผู้ป่วยโรคเรื้อรัง',
                     textAlign: TextAlign.center,
@@ -43,7 +55,7 @@ class _WelcomeState extends State<Welcome> {
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(236, 186, 42, 14))),
-                SizedBox(height: 100),
+                SizedBox(height: 80),
 
                 Material(
                   borderRadius: BorderRadius.circular(25),
@@ -58,7 +70,7 @@ class _WelcomeState extends State<Welcome> {
                       "เริ่มต้นการใช้งาน",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 22,
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontWeight: FontWeight.bold),
                     ),

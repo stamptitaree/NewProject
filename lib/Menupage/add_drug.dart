@@ -198,7 +198,7 @@ class _Add_drugState extends State<Add_drug> {
             borderRadius: BorderRadius.circular(25),
             color: Color(0xff2F3A61),
             child: MaterialButton(
-              padding: EdgeInsets.fromLTRB(120, 15, 120, 15),
+              padding: EdgeInsets.fromLTRB(125, 15, 125, 15),
               onPressed: () {},
               child: Text(
                 "ยืนยัน",

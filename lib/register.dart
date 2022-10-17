@@ -22,7 +22,7 @@ class _RegisterState extends State<Register> {
               color: Color(0xff669486),
             ),
           )),
-      backgroundColor: Color.fromARGB(255, 255, 241, 216),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -32,7 +32,7 @@ class _RegisterState extends State<Register> {
                 // logo
                 SizedBox(height: 10),
                 Image.asset(
-                  'images/adduser.png',
+                  'images/regis.png',
                   width: 140,
                   height: 150,
                   //fit: BoxFit.cover,
@@ -56,6 +56,10 @@ class _RegisterState extends State<Register> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.email,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),
@@ -86,6 +90,10 @@ class _RegisterState extends State<Register> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.lock,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),
@@ -114,6 +122,10 @@ class _RegisterState extends State<Register> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.account_circle,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),
@@ -142,6 +154,10 @@ class _RegisterState extends State<Register> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.medication_liquid,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),
@@ -170,6 +186,10 @@ class _RegisterState extends State<Register> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.favorite,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),

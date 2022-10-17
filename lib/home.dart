@@ -13,7 +13,7 @@ class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 241, 216),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -23,7 +23,7 @@ class _MyHomeState extends State<MyHome> {
                 // logo
 
                 Image.asset(
-                  'images/login.png',
+                  'images/login1.png',
                   // width: 120,
                   // height: 120,
                   fit: BoxFit.cover,
@@ -35,7 +35,7 @@ class _MyHomeState extends State<MyHome> {
                     style: TextStyle(
                         fontSize: 42,
                         fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(224, 80, 38, 38))),
+                        color: Color(0xff7D1B1B))),
                 SizedBox(height: 40),
 
                 //email textfield
@@ -47,6 +47,10 @@ class _MyHomeState extends State<MyHome> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.email,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),
@@ -77,6 +81,10 @@ class _MyHomeState extends State<MyHome> {
                         fontSize: 18,
                         fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.lock,
+                          color: Colors.white,
+                        ),
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xff669486),

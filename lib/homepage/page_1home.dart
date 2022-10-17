@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:welcome/Menupage/add_drug.dart';
 import 'package:welcome/home.dart';
+import 'package:welcome/homepage/page_4user.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -28,7 +29,7 @@ class _HomePageState extends State<HomePage> {
               },
               icon: Icon(Icons.medical_information),
               label: Text(
-                "เพิ่มยา",
+                "+ เพิ่มยา",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 30,
@@ -37,7 +38,7 @@ class _HomePageState extends State<HomePage> {
               ),
               style: ElevatedButton.styleFrom(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 16, horizontal: 102),
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 90),
                   backgroundColor: Color(0xff804F4F),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25))),
@@ -83,7 +84,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 40),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(Icons.account_circle),
+              icon: Icon(Icons.face),
               label: Text(
                 "ข้อมูลส่วนตัว",
                 textAlign: TextAlign.center,
