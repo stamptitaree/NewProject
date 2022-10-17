@@ -204,7 +204,7 @@ class _Add_drugState extends State<Add_drug> {
                 "ยืนยัน",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 26,
                     color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold),
               ),
